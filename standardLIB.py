@@ -1,0 +1,25 @@
+#操作系统接口,避免覆盖内置函数open() dir() help()
+import os
+#文件和目录管理
+import shutil
+#文件通配符
+import glob
+#命令行参数
+import sys
+#正则匹配
+import re
+#数学
+import math
+#随机数
+import random
+#互联网
+from urllib3 import request
+from urllib import request
+#日期和时间
+from datetime import date
+#数据压缩
+import zlib
+
+##第三方库 pillow opencv-python matplotlib flask
+
+
