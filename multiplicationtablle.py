@@ -1,16 +1,8 @@
-print('     ',end='')
-for k in range(1,10):
-    print('{:<5}'.format(k),end="")
-print('\n')
-for i in range(1,10):
-    print('{:<5}'.format(i),end="")
-    for j in range(1,i+1):
-        print('{:<5}'.format(i*j),end='')
-    print('\n')
-
-for i in range(1,10):
-    for j in range(1,i+1): 
-       print("%d*%d=%d"%(i,j,i*j),end=" ")
-    print()
+for i in range(10):
+    a = 1
+    while a <= i:
+        print("{}*{}={: <2}".format(a, i, i * a),end=' ')
+        a += 1
+    print('\t')
 
 print ('\n'.join([' '.join(['%s*%s=%-2s' % (j,i,i*j) for j in range(1,i+1)]) for i in range(1,10)]))
