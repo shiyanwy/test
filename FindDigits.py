@@ -1,5 +1,5 @@
 # 打开并读取文件里的字符串
-with open(r'doc\stego.txt') as f:
+with open(r'doc/stego.txt') as f:
     s = f.read()
 res = ""
 
