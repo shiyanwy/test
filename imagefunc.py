@@ -1,5 +1,5 @@
 from PIL import Image
-im = Image.open(r'E:\Project\123.png')
+im = Image.open(r'img\123.png')
 # im.show()
 pixdata = im.load()
 print(im.height,im.width)
