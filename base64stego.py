@@ -1,6 +1,9 @@
 import base64
+import os
 b64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-f = open(r'doc\stego.txt')
+# 文件路径问题：windows //或\ ; linux \
+# 或者用 os.path.join(path1,path2,paht3)拼接
+f = open(r'doc/stego.txt')
 bin_str = ''
 for line in f.readlines():
     # stegb64 = str(line, "utf-8").strip("\n")
