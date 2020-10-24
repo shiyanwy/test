@@ -20,7 +20,7 @@ cur = conn.cursor()
 
 #Retrieving informat
 try:
-    cur.execute("select wname, wpartofspeech, wannotation from words where wbook=? and wunit=?", ('090','4'))
+    cur.execute("select wname, wpartofspeech, wannotation from words where wbook=? and wunit=?", ('091','4'))
 except mariadb.Error as e:
     print("Error: {}".format(e))
 
